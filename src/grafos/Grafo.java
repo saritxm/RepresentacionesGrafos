@@ -80,7 +80,7 @@ public class Grafo {
         }
     }
 
-    // 🔹 Mostrar matriz de incidencia
+    // Mostrar matriz de incidencia
     public void mostrarMatrizIncidencia() {
         System.out.println("Matriz de Incidencia:");
         for (int i = 0; i < numVertices; i++) {

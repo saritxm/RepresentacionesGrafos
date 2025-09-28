@@ -20,7 +20,7 @@ public class Grafo {
         }
     }
 
-    // 🔹 Agregar arista entre dos vértices
+    // Agregar arista entre dos vértices
     public void agregarArista(int origen, int destino) {
         // lista de aristas
         listaAristas.add(new int[]{origen, destino});
@@ -34,7 +34,7 @@ public class Grafo {
         listaAdyacencia.get(destino).add(origen); // si es no dirigido
     }
 
-    // 🔹 Generar matriz de incidencia
+    // Generar matriz de incidencia
     public void generarMatrizIncidencia() {
         int numAristas = listaAristas.size();
         matrizIncidencia = new int[numVertices][numAristas];
@@ -49,7 +49,7 @@ public class Grafo {
         }
     }
 
-    // 🔹 Mostrar matriz de adyacencia
+    // Mostrar matriz de adyacencia
     public void mostrarMatrizAdyacencia() {
         System.out.println("Matriz de Adyacencia:");
         for (int i = 0; i < numVertices; i++) {
@@ -60,7 +60,7 @@ public class Grafo {
         }
     }
 
-    // 🔹 Mostrar lista de adyacencia
+    // Mostrar lista de adyacencia
     public void mostrarListaAdyacencia() {
         System.out.println("Lista de Adyacencia:");
         for (int i = 0; i < numVertices; i++) {
@@ -72,7 +72,7 @@ public class Grafo {
         }
     }
 
-    // 🔹 Mostrar lista de aristas
+    // Mostrar lista de aristas
     public void mostrarListaAristas() {
         System.out.println("Lista de Aristas:");
         for (int[] arista : listaAristas) {
